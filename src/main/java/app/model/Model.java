@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+реализация паттерна MVC. Здесь Model - данные, с которыми работает программа. Модель хранит данные
+View- отображение. JSP- страницы
+Controller - сервлеты, связующее звено между данными и отображением. */
 public class Model {
 
     //реализация шаблона Синглтон
@@ -13,7 +17,7 @@ public class Model {
 
     private List<User> model;
 
-    private static Model getInstance() {
+    public static Model getInstance() {
         return instance;
     }
 

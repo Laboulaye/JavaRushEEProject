@@ -35,6 +35,12 @@ public class AddServlet extends HttpServlet {
         User user = new User(name, password);
         //создаем объект Модели
         Model model = Model.getInstance();
+        //и добавляем пользователя в список
         model.addUser(user);
+
+        //устанавливаем атрибут с именем пользователя
+        req.setAttribute("username", name);
+        //вызываем метод doGetБ в который передаем текущий запрос и ответ
+        doGet(req, resp);
     }
 }

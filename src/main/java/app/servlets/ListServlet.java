@@ -15,17 +15,8 @@ import java.util.List;
 @WebServlet("/list")
 public class ListServlet extends HttpServlet {
 
-    @Override  //обработка GET- запроса
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        //получаем из объекта запроса объект диспетчера запросов, куда передаем адрес jsp страницы
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/List.jsp");
-        //перенаправляем на эту страницу
-        requestDispatcher.forward(req, resp);
-    }
-
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //получаем из модели список имен пользователей
        Model model = Model.getInstance();

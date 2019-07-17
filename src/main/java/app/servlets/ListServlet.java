@@ -18,6 +18,9 @@ public class ListServlet extends HttpServlet {
     @Override
     protected void doGet (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        //установка кодировки
+        req.setCharacterEncoding("UTF-8");
+
         //получаем из модели список имен пользователей
        Model model = Model.getInstance();
        List<String> names = model.list();

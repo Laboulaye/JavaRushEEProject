@@ -18,6 +18,8 @@ public class AddServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        //установка кодировки
+        req.setCharacterEncoding("UTF-8");
         //получаем из объекта запроса объект диспетчера запросов, куда передаем адрес jsp страницы
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/Add.jsp");
         //перенаправляем на эту страницу
@@ -26,6 +28,9 @@ public class AddServlet extends HttpServlet {
 
     @Override //обработка POST-запроса
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        //установка кодировки
+        req.setCharacterEncoding("UTF-8");
 
         //вытягиваем из запроса имя и пароль, которые отправила форма jsp
         String name = req.getParameter("name");

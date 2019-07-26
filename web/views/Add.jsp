@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Макс
+  User: Максим
   Date: 17.07.2019
   Time: 11:26
   To change this template use File | Settings | File Templates.
@@ -14,7 +14,7 @@
 <body class="w3-light-grey">
     <!-- шапка страницы -->
     <div class="w3-container w3-blue-grey w3-opacity w3-right-align">
-        <h1>Super app</h1>
+        <h1>Simple app</h1>
     </div>
     <!-- контент -->
     <div class="w3-container w3-padding">

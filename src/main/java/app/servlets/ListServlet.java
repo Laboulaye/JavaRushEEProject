@@ -1,7 +1,6 @@
 package app.servlets;
 
 import app.model.Model;
-import sun.awt.ModalExclude;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
